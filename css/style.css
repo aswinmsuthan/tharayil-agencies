@@ -54,7 +54,7 @@ h6 {
 }
 
 #header.header-scrolled .logo img {
-    content: url(/assets/img/ta-logo1.png);
+    content: url("../assets/img/ta-logo1.png");
 }
 
 #header.header-scrolled .mobile-nav-toggle {
@@ -444,7 +444,7 @@ section {
 }
 
 .home-hardware {
-    background-image: url(/assets/img/home/hardware-bg.jpg);
+    background-image: url("../assets/img/home/hardware-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -712,7 +712,7 @@ section {
     min-width: 100%;
 } */
 .aboutus .tharayil-bg{
-    background-image: url(/assets/img/about-us.jpg);
+    background-image: url("../assets/img/about-us.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
