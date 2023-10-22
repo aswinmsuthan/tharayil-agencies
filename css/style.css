@@ -491,11 +491,11 @@ section {
     font-weight: 400;
 }
 
-.main-why-choose{
+.main-why-choose {
     background: #f5f5f5;
 }
 
-.main-why-choose .why-choose-us h3{
+.main-why-choose .why-choose-us h3 {
     font-weight: bold;
     font-size: 30px;
 }
@@ -505,7 +505,7 @@ section {
     text-align: center;
     color: #3c3c3c;
     font-weight: bold;
-    
+
     padding-bottom: 30px;
     position: relative;
 }
@@ -523,10 +523,11 @@ section {
     padding: 20px;
     transition: all ease-in-out 0.3s;
     background: #fff;
-    
+
 }
-.main-why-choose .choose-box:hover{
-    box-shadow: 5px 6px 10px 7px #dadada75; 
+
+.main-why-choose .choose-box:hover {
+    box-shadow: 5px 6px 10px 7px #dadada75;
 }
 
 
@@ -602,6 +603,41 @@ section {
     transform: scale(1.15);
 }
 
+.button-div {
+    display: flex;
+    justify-content: center;
+    padding-top: 17px;
+}
+
+.button-div button {
+    padding: 1.3em 3em;
+    font-size: 13px;
+    font-family: "Raleway";
+
+    /* text-transform: uppercase; */
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-div button:hover {
+    background-color: #00b8ff;
+    box-shadow: 0px 15px 20px rgb(0, 184, 255, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.button-div button:active {
+    transform: translateY(-1px);
+}
+
 .hardware {
     background: #f5f5f5;
 }
@@ -655,6 +691,143 @@ section {
 
 }
 
+.hardware-hero {
+    height: 100px;
+    background: url(https://images.homify.com/images/a_0,c_fit,f_auto,q_auto,w_554/v1495001963/p/photo/image/2013905/CAM_2_OPTION_1/minimalist-living-room-photos-by-homify.jpg) bottom center no-repeat
+}
+
+.hardware-catalogue .catalogue h3 {
+    font-size: 25px;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+
+}
+
+/* .hardware-catalogue .catalogue .catalogue-section {
+    padding-bottom:  25px;
+} */
+
+.hardware-catalogue .catalogue .card {
+    position: relative;
+    /* width: 300px;
+    height: 200px; */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hardware-catalogue .catalogue .card img {
+    /* width: 48px;
+    fill: #333; */
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hardware-catalogue .catalogue .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.hardware-catalogue .catalogue .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hardware-catalogue .catalogue .card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.hardware-catalogue .catalogue .card__title {
+    margin: 0;
+    font-size: 18px;
+    /* color: #00b8ff; */
+    /* text-shadow: 2px 0px 0px #00b8ff; */
+    font-weight: bold;
+    
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+}
+
+.hardware-catalogue .catalogue .card:hover img {
+    scale: 0;
+}
+
+.hardware-catalogue .catalogue .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    text-align: justify;
+    color: #262626;
+    line-height: 1.4;
+}
+
+.hardware-catalogue .catalogue .card {
+    /* width: 300px;
+    height: 200px; */
+    perspective: 1000px;
+}
+
+.hardware-catalogue .catalogue .card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+.hardware-catalogue .catalogue .card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.hardware-catalogue .catalogue .card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.hardware-catalogue .catalogue .card-front {
+    background-color: #6A2C70;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #6A2C70;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(0deg);
+}
+
+.hardware-catalogue .catalogue .card-back {
+    background-color: #F08A5D;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border: 10px solid #F08A5D;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+    transform: rotateY(180deg);
+}
+
+
 @media (max-width: 768px) {
     .products .paint-brands img {
         max-width: 40%;
@@ -700,7 +873,7 @@ section {
 
 .aboutus .offers ul p {
     display: inline-block;
-    
+
     color: #ffff;
 }
 
@@ -711,15 +884,15 @@ section {
 /* .aboutus .myVideo {
     min-width: 100%;
 } */
-.aboutus .tharayil-bg{
+.aboutus .tharayil-bg {
     background-image: url("../assets/img/about-us.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
 
-.aboutus .tharayil-bg .bg-color{
+.aboutus .tharayil-bg .bg-color {
     background-color: #0000009f;
     padding: 30px 0px;
 }
