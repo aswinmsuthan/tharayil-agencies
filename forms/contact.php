@@ -5,7 +5,7 @@ $email= $_POST['email'];
 $message= $_POST['message'];
 
 $to = "aswinmsuthan7025@gmail.com";
-$subject = "This is the subject line";
+$subject = "Question from Customers";
 
 // The following text will be sent
 // Name = user entered name
@@ -14,12 +14,12 @@ $subject = "This is the subject line";
 $txt ="Name = ". $name . "\r\n Email = "
 	. $email . "\r\n Message =" . $message;
 
-$headers = "From: noreply@demosite.com" . "\r\n" .
+$headers = "From: noreply@tharayilagencies.com" . "\r\n" .
 			"CC: somebodyelse@example.com";
 if($email != NULL) {
 	mail($to, $subject, $txt, $headers);
 }
 
 // Redirect to
-header("Location:last.html");
+header("Location:response.html");
 ?>
